@@ -16,7 +16,7 @@ The query url is {clientBase}+'/api/geo/geocoding/query/{location}'", where
 1. **{location}** can be any country,city or specific address, except Mars or Juniper.
 2. **{clientBase}** will be read from app.config
 
-##Example
+##Note
 To understand how to query timezone API , you might just need to focus on the comment,"HTTP GET"(C#), instead of downloading entire repo.
 
 **Dont ask me why there is no java version! Because I am LAZY **.
