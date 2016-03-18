@@ -1,13 +1,13 @@
 # Sync
 
 ##Description
-this is a **Demo** project to show you how to query timezone api and sync up with our Oracle database.
+This is a **Demo** project to show you how to query timezone api and sync up with our Oracle database.
 
 ##Basic Requirement
-1. .Net 4.5.2
+**.Net 4.5.2**
 
 ##Important
-1. Before you execute this app,please modify  **add key="clientBase" value="http://localhost:8070/** to our api url in the app.config.
+Before you execute this app,please modify  **add key="clientBase" value="http://localhost:8070/** to our api url in the app.config.
 
 ##How
 
