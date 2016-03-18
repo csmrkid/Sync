@@ -3,10 +3,13 @@
 ##Description
 this is a **Demo** project to show you how to query timezone api and sync up with our Oracle database.
 
-To understand how to query timezone API , you might just focus on this part of code(C#)
+##Basic Requirement
+1. .Net 4.5.2
+
+To understand how to query timezone API , you might just need to focus on the comment,"HTTP GET"(C#)
 ```C#
 using (var client = new HttpClient())
-            {
+{
                 client.BaseAddress = new Uri(clientBase);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -29,10 +32,9 @@ using (var client = new HttpClient())
                     w.LAST_MODIFIED_DT = DateTime.Now;
                     await d.SaveChangesAsync();
                 }
-            }
+}
 ```
 
-##Basic Requirement
-1. .Net 4.5.2
+
 
 
