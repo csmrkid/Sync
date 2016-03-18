@@ -10,7 +10,9 @@ this is a **Demo** project to show you how to query timezone api and sync up wit
 1. Before you execute this app,please modify the **<add key="clientBase" value="http://localhost:8070"/>** to our api url in the app.config.
 
 ##How
+
 The query url is {clientBase}+'/api/geo/geocoding/query/{location}'", where 
+
 1.{location} can be any country,city or specific address, except Mars or Juniper.
 2.{clientBase} will be read from app.config
 
