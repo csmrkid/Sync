@@ -52,7 +52,6 @@ namespace WindowsFormsApplication3
 
                 if (response.IsSuccessStatusCode)
                 {
-                    //Data g = await response.Content.ReadAsAsync<Data>();
                     var jsonAsString = await response.Content.ReadAsStringAsync();
                     var g = JsonConvert.DeserializeObject<wrapper>(jsonAsString);
                     Console.WriteLine("{0}\t${1}\t{2}", g.data.day, g.data.displayName, g.data.lat);
