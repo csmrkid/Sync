@@ -11,6 +11,7 @@ Before you execute this app,please modify the ** <add key="clientBase" value="ht
 
 ##Note
 To understand how to query timezone API , you might just need to focus on the comment,"HTTP GET"(C#), instead of downloading entire repo.
+** Dont ask me why no java version!Beacause I am LAZY **.
 ```C#
 using (var client = new HttpClient())
 {
