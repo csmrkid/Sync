@@ -3,7 +3,7 @@
 ##Description
 this is a **Demo** project to show you how to query timezone api and sync up with our Oracle database.
 
-> To understand how to query timezone API , you might just focus on this part of code(C#)
+To understand how to query timezone API , you might just focus on this part of code(C#)
 ```C#
 using (var client = new HttpClient())
             {
