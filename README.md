@@ -6,7 +6,8 @@ this is a **Demo** project to show you how to query timezone api and sync up wit
 ##Basic Requirement
 1. .Net 4.5.2
 
-To understand how to query timezone API , you might just need to focus on the comment,"HTTP GET"(C#)
+##Note
+To understand how to query timezone API , you might just need to focus on the comment,"HTTP GET"(C#), instead of downloading entire repo.
 ```C#
 using (var client = new HttpClient())
 {
