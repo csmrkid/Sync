@@ -7,11 +7,12 @@ this is a **Demo** project to show you how to query timezone api and sync up wit
 1. .Net 4.5.2
 
 ##Important
-Before you execute this app,please modify the ** <add key="clientBase" value="http://localhost:8070"/>** to our api url in the app.config.
+Before you execute this app,please modify the **<add key="clientBase" value="http://localhost:8070"/>** to our api url in the app.config.
 
 ##Note
 To understand how to query timezone API , you might just need to focus on the comment,"HTTP GET"(C#), instead of downloading entire repo.
-** Dont ask me why no java version!Beacause I am LAZY **.
+
+**Dont ask me why there is no java version!Beacause I am LAZY **.
 ```C#
 using (var client = new HttpClient())
 {
