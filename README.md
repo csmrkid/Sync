@@ -7,8 +7,8 @@ this is a **Demo** project to show you how to query timezone api and sync up wit
 1. .Net 4.5.2
 
 ##Important
-Before you execute this app,please modify the **<add key="clientBase" value="http://localhost:8070"/>** to our api url in the app.config.
-
+1. Before you execute this app,please modify the **<add key="clientBase" value="http://localhost:8070"/>** to our api url in the app.config.
+2. the query url clientBase+'/api/geo/geocoding/query/{location}', where {location} can be any country,city or specific address, except Mars or Juniper.
 ##Note
 To understand how to query timezone API , you might just need to focus on the comment,"HTTP GET"(C#), instead of downloading entire repo.
 
