@@ -19,7 +19,7 @@ The query url is {clientBase}+'/api/geo/geocoding/query/{location}'", where
 ##Note
 To understand how to query timezone API , you might just need to focus on the comment,"HTTP GET"(C#), instead of downloading entire repo.
 
-**Dont ask me why there is no java version! Because I am LAZY **.
+**..**.
 ```C#
 using (var client = new HttpClient())
 {
@@ -47,7 +47,31 @@ using (var client = new HttpClient())
                 }
 }
 ```
+**if you are using Play/Java,then check this out **
+```
+@Override
+	public F.Promise<Outcome<JsonNode>> createAsync(JsonNode json){
+		
+		return ws.url("{API Server realm}"/api/geo/geocoding/query/{location}")
+				.setHeader("Content-Type", "application/json")
+				.post(json)
+				.map((o) -> {
+					switch (o.getStatusText()) {
+					case "OK":
+						JsonNode jn = o.asJson(); 
+						
+						return Outcome.Success(jn);
+					case "Forbidden":
+						return Outcome.Error("invalid account or password");
+					default:
+						return Outcome.Error("server exception");
+					}
+				});
+	}
+```
+**for angular1/angular2/jquery**
 
+just using **$http.get**...
 
 
 
